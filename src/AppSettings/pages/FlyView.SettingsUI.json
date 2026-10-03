@@ -8,7 +8,7 @@
     "groups": [
         {
             "heading": "General",
-            "keywords": ["checklist", "preflight", "multi vehicle", "center map", "log replay", "camera control", "home position", "mission popup", "geomap", "3d map", "map engine", "debug", "force arm"],
+            "keywords": ["checklist", "preflight", "multi vehicle", "center map", "log replay", "camera control", "home position", "mission popup", "geomap", "3d map", "map engine", "debug", "force arm", "obstacle", "lidar", "radar"],
             "controls": [
                 {
                     "setting": "appSettings.useChecklist"
@@ -32,6 +32,9 @@
                 },
                 {
                     "setting": "flyViewSettings.updateHomePosition"
+                },
+                {
+                    "setting": "flyViewSettings.showObstacleDistanceOverlay"
                 },
                 {
                     "setting": "flyViewSettings.enableAutomaticMissionPopups"
