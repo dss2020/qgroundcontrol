@@ -1,6 +1,7 @@
 #include "FirmwarePluginManager.h"
 #include "FirmwarePlugin.h"
 #include "FirmwarePluginFactory.h"
+#include "GenericFirmwarePlugin.h"
 #include "QGCLoggingCategory.h"
 
 #include <QtCore/QGlobalStatic>
@@ -83,7 +84,7 @@ FirmwarePlugin *FirmwarePluginManager::firmwarePluginForAutopilot(MAV_AUTOPILOT 
 
     if (!plugin) {
         if (!_genericFirmwarePlugin) {
-            _genericFirmwarePlugin = new FirmwarePlugin(this);
+            _genericFirmwarePlugin = new GenericFirmwarePlugin(this);
         }
         plugin = _genericFirmwarePlugin;
     }

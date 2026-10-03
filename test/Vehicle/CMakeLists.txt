@@ -22,6 +22,8 @@ target_sources(
         FTPControllerTest.h
         GenericFirmwareCommandFallbackTest.cc
         GenericFirmwareCommandFallbackTest.h
+        GenericFirmwarePluginTest.cc
+        GenericFirmwarePluginTest.h
         GuidedModeROITest.cc
         GuidedModeROITest.h
         InitialConnectTest.cc
@@ -98,6 +100,7 @@ if(NOT QGC_NO_SERIAL_LINK)
     add_qgc_test(FirmwareUpgradeControllerTest LABELS Unit Vehicle)
 endif()
 add_qgc_test(GenericFirmwareCommandFallbackTest LABELS Integration Vehicle)
+add_qgc_test(GenericFirmwarePluginTest LABELS Unit Vehicle)
 add_qgc_test(GuidedModeROITest LABELS Integration Vehicle)
 add_qgc_test(GuidedModeROIAPMTest LABELS Integration Vehicle)
 add_qgc_test(InitialConnectTest LABELS Integration Vehicle)
