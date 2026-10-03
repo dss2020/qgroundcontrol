@@ -15,6 +15,8 @@ target_sources(${CMAKE_PROJECT_NAME}
         FTPControllerTest.h
         FirmwareUpgradeControllerTest.cc
         FirmwareUpgradeControllerTest.h
+        GenericFirmwarePluginTest.cc
+        GenericFirmwarePluginTest.h
         GuidedModeROITest.cc
         GuidedModeROITest.h
         InitialConnectTest.cc
@@ -63,6 +65,7 @@ add_qgc_test(APMStartMissionTest LABELS Integration Vehicle)
 add_qgc_test(FTPControllerTest LABELS Integration Vehicle RESOURCE_LOCK TempFiles)
 add_qgc_test(FTPManagerTest LABELS Integration Vehicle)
 add_qgc_test(FirmwareUpgradeControllerTest LABELS Unit Vehicle)
+add_qgc_test(GenericFirmwarePluginTest LABELS Unit Vehicle)
 add_qgc_test(GuidedModeROITest LABELS Integration Vehicle)
 add_qgc_test(GuidedModeROIAPMTest LABELS Integration Vehicle)
 add_qgc_test(InitialConnectTest LABELS Integration Vehicle)
