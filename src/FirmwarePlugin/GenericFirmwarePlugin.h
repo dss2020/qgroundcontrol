@@ -13,4 +13,15 @@ public:
 
     bool isCapable(const Vehicle* vehicle, FirmwareCapabilities capabilities) const override;
     void startTakeoff(Vehicle* vehicle) const override;
+    void startMission(Vehicle* vehicle) const override;
+
+    QString pauseFlightMode() const override;
+    QString missionFlightMode() const override;
+    QString rtlFlightMode() const override;
+    QString landFlightMode() const override;
+    QString takeOffFlightMode() const override;
+
+private:
+    /// Name of the AVAILABLE_MODES entry tagged with @a standardMode, empty if the vehicle reported none
+    QString _standardModeName(MAV_STANDARD_MODE standardMode) const;
 };
